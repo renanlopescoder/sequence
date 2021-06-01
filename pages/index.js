@@ -4,6 +4,9 @@ import Link from "next/link";
 import { Button, Col, Typography, Row } from "antd";
 
 import Layout from "../src/components/Layout";
+import SdkGrid from "../src/components/SdkGrid";
+import Descriptions from "../src/components/Descriptions";
+import SubscriptionForm from "../src/components/SubscriptionForm";
 
 const { Title } = Typography;
 
@@ -70,7 +73,8 @@ function Home() {
             <Link href="https://chat.sequence.build/">
               <Button
                 style={{
-                  backgroundColor: "rgb(50,42,128)",
+                  backgroundImage:
+                    "linear-gradient(to right top,#5b3473,#3d508b,#1a6693,#217891,#47888c)",
                   borderColor: "rgb(50,42,128)",
                 }}
                 size="large"
@@ -82,48 +86,18 @@ function Home() {
             </Link>
           </Col>
         </Row>
-        <Row>
-          <Col
-            md={{ span: 8, offset: 8 }}
-            lg={{ span: 8, offset: 8 }}
-            sm={{ span: 22, offset: 1 }}
-            xs={{ span: 22, offset: 1 }}
-            align="center"
-          >
-            <Title
-              level={2}
-              style={{
-                fontSize: "35px",
-                color: "white",
-                textAlign: "center",
-              }}
-            >
-              Our SDK + APIs make blockchain simple and user friendly
-            </Title>
-          </Col>
-        </Row>
-        <Row>
-          <Col
-            md={{ span: 8, offset: 8 }}
-            lg={{ span: 8, offset: 8 }}
-            sm={{ span: 22, offset: 1 }}
-            xs={{ span: 22, offset: 1 }}
-            align="center"
-          >
-            <Title
-              level={3}
-              style={{
-                fontSize: "18px",
-                color: "grey",
-                textAlign: "center",
-              }}
-            >
-              And they give you everything you’ll need to run your application
-              beautifully on the blockchain.
-            </Title>
-          </Col>
-        </Row>
+
         <br />
+        <Descriptions
+          title="Our SDK + APIs make blockchain simple and user friendly"
+          subtitle=" And they give you everything you’ll need to run your application beautifully on the blockchain."
+        />
+
+        <br />
+        <SdkGrid />
+
+        <br />
+        <SubscriptionForm title="Subscription" successMessage="Success" />
         <br />
       </Layout>
     </>

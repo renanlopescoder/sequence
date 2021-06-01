@@ -1,5 +1,5 @@
 import React from "react";
-import { Layout, Menu, Avatar, notification, Button, Col, Row } from "antd";
+import { Layout, Menu, Button, Col, Row } from "antd";
 
 import { useMoralis } from "react-moralis";
 import { LogoutOutlined } from "@ant-design/icons";
@@ -115,10 +115,7 @@ function LayoutComponent({ children }) {
         }}
       >
         {children}
-        <SubscriptionForm title="Subscription" successMessage="Success" />
       </Content>
-
-      {/* <Footer content={brand.footer_content} /> */}
     </Layout>
   );
 }
