@@ -61,7 +61,7 @@ function SubscriptionCard() {
               </Col>
             </Row>
             <Row gutter={16}>
-              <Col md={12} lg={12} sm={12} xs={12}>
+              <Col md={12} lg={12} sm={24} xs={24}>
                 <Form.Item
                   label={
                     <label
@@ -77,7 +77,7 @@ function SubscriptionCard() {
                   {formInput()}
                 </Form.Item>
               </Col>
-              <Col md={12} lg={12} sm={12} xs={12}>
+              <Col md={12} lg={12} sm={24} xs={24}>
                 <Form.Item
                   label={
                     <label

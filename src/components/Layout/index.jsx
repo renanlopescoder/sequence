@@ -67,8 +67,8 @@ function LayoutComponent({ children }) {
         <Col
           md={{ span: 8, offset: 4 }}
           lg={{ span: 8, offset: 4 }}
-          sm={{ span: 22, offset: 1 }}
-          xs={{ span: 22, offset: 1 }}
+          sm={{ span: 22, offset: 2 }}
+          xs={{ span: 22, offset: 2 }}
         >
           <Link href="/">
             <img
@@ -80,10 +80,10 @@ function LayoutComponent({ children }) {
           </Link>
         </Col>
         <Col
-          md={{ span: 8, offset: 0 }}
-          lg={{ span: 8, offset: 0 }}
-          sm={{ span: 22, offset: 1 }}
-          xs={{ span: 22, offset: 1 }}
+          md={{ span: 12, offset: 0 }}
+          lg={{ span: 12, offset: 0 }}
+          sm={{ span: 21, offset: 3 }}
+          xs={{ span: 24, offset: 0 }}
         >
           <Menu className="layout-menu" mode="horizontal" theme="light">
             {getMenuItem("Docs", "/docs", true)}
