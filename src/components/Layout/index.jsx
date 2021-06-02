@@ -63,7 +63,7 @@ function LayoutComponent({ children }) {
 
   return (
     <Layout>
-      <Row style={{ backgroundColor: "black" }}>
+      <Row className="layout-gradient">
         <Col
           md={{ span: 8, offset: 4 }}
           lg={{ span: 8, offset: 4 }}
@@ -72,12 +72,7 @@ function LayoutComponent({ children }) {
         >
           <Link href="/">
             <img
-              style={{
-                marginTop: "53px",
-                cursor: "pointer",
-                borderRadius: "0",
-                maxWidth: "160px",
-              }}
+              className="layout-logo"
               src={require("../../assets/sequence.png")}
               alt="Sequence logo"
               onClick={() => router.push("/")}
@@ -90,15 +85,7 @@ function LayoutComponent({ children }) {
           sm={{ span: 22, offset: 1 }}
           xs={{ span: 22, offset: 1 }}
         >
-          <Menu
-            style={{
-              marginTop: "45px",
-              backgroundColor: "black",
-              borderColor: "black",
-            }}
-            mode="horizontal"
-            theme="light"
-          >
+          <Menu className="layout-menu" mode="horizontal" theme="light">
             {getMenuItem("Docs", "/docs", true)}
             {getMenuItem("Github", "https://github.com/0xsequence")}
             {getMenuItem("Discord", "https://chat.sequence.build/")}
@@ -108,14 +95,7 @@ function LayoutComponent({ children }) {
         </Col>
       </Row>
 
-      <Content
-        style={{
-          backgroundColor: "black",
-          padding: "80px 0 0 0",
-        }}
-      >
-        {children}
-      </Content>
+      <Content className="layout-gradient layout-content">{children}</Content>
     </Layout>
   );
 }

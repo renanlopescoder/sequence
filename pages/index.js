@@ -72,11 +72,7 @@ function Home() {
           >
             <Link href="https://chat.sequence.build/">
               <Button
-                style={{
-                  backgroundImage:
-                    "linear-gradient(to right top,#5b3473,#3d508b,#1a6693,#217891,#47888c)",
-                  borderColor: "rgb(50,42,128)",
-                }}
+                className="primary-button"
                 size="large"
                 type="primary"
                 shape="round"

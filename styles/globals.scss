@@ -40,3 +40,18 @@ body::-webkit-scrollbar-thumb {
 .sdk-grid {
   margin-top: 70px;
 }
+
+.primary-button {
+  background-image: linear-gradient(
+    to right top,
+    #5b3473,
+    #3d508b,
+    #1a6693,
+    #217891,
+    #47888c
+  );
+  border-color: rgb(22, 22, 22);
+}
+
+@import "../src/components/Layout/Layout.styles.scss";
+@import "../src/components/SubscriptionForm/SubscriptionForm.styles.scss";

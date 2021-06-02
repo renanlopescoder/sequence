@@ -23,18 +23,7 @@ function SubscriptionCard() {
     }
   };
 
-  const formInput = () => (
-    <Input
-      style={{
-        backgroundColor: "black",
-        borderColor: "rgb(42,42,42)",
-        color: "white",
-        borderRadius: "10px",
-        padding: "10px",
-        fontSize: "20px",
-      }}
-    />
-  );
+  const formInput = () => <Input className="subscription-form-input" />;
 
   return (
     <>
@@ -138,27 +127,13 @@ function SubscriptionCard() {
                   }
                   name="about"
                 >
-                  <TextArea
-                    style={{
-                      backgroundColor: "black",
-                      borderColor: "rgb(42,42,42)",
-                      color: "white",
-                      borderRadius: "10px",
-
-                      fontSize: "12px",
-                    }}
-                    rows={8}
-                  />
+                  <TextArea className="subscription-form-text-area" rows={8} />
                 </Form.Item>
               </Col>
             </Row>
 
             <Button
-              style={{
-                backgroundImage:
-                  "linear-gradient(to right top,#5b3473,#3d508b,#1a6693,#217891,#47888c)",
-                borderColor: "rgb(50,42,128)",
-              }}
+              className="primary-button"
               size="large"
               type="primary"
               shape="round"
